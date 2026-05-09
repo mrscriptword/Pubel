@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./share_drop  # <-- Folder proyek Flutter Anda
+        working-directory: ./share_drop
 
     steps:
       - name: Checkout Repository
@@ -38,4 +38,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: pubel_apk
-          path: share_drop/build/app/outputs/flutter-apk/app-release.apk  # <-- Path dari root
+          path: share_drop/build/app/outputs/flutter-apk/app-release.apk
